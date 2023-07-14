@@ -1,0 +1,15 @@
+
+version: 2
+
+sources :
+    - name : General
+      database : PC_DBT_DB
+      schema :  PUBLIC
+      tables :
+        - name : EMPLOYEE
+          columns:
+            - name: EMPNAME
+              tests:
+                - unique
+
+

@@ -19,3 +19,15 @@ models:
             tests:
                 - unique
                 - not_null
+sources :
+    - name : Generalh
+      database : PC_DBT_DB
+      schema :  PUBLIC
+      tables :
+        - name : EMPLOYEE
+          columns:
+            - name: EMPNAME
+              tests:
+                - unique
+
+
