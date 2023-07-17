@@ -1,4 +1,4 @@
 {{ config( materialized ='table')}}
 
-SELECT * FROM PC_DBT_DB.PUBLIC.EMPLOYEE 
+SELECT 'sudheer_table' as tablename,{{table_count() }} as count FROM PC_DBT_DB.PUBLIC.EMPLOYEE 
 
